@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+    .cookieimg {
+        position: relative;
+    }
+    .sidebarleft {
+        position:absolute;
+        left: 600px;
+        padding: 0;
+        top:0;
+    }
+    .sidebarright {
+        position: absolute;
+        right:600px;
+        padding: 0;
+        top:0;
+    }        
+    .upgradebox {
+        position: relative;
+        
+    }
+body {
+    background-image: url("https://vignette.wikia.nocookie.net/cookieclicker/images/5/50/Wiki-background/revision/latest?cb=20130930144956;");
+}
+</style>    
+<script> 
+    function buttonclick() {
+  document.getElementById("cookie").value++;
+}
+</script>
+<body>
+    <div style="position: absolute; left: 50px; top: 290px; cursor: pointer;">
+        <img id="gimper_img" src="https://i.pinimg.com/originals/b5/0b/9e/b50b9e587149821da847b86dbcb5e8be.jpg" width="450" height="450" alt="cookiehere" border="0" onclick="buttonclick();">
+          <input type="text"  id="cookie" value="0" ></input>
+    </div>
+    
+    <div class = "sidebarleft">
+    <img id ="sidebarleft" src ="https://orteil.dashnet.org/cookieclicker/img/panelVertical.png?v=2" style="height:965px;"> </div>
+   
+    <div class = "sidebarright">
+    <img id ="sidebarright" src ="https://orteil.dashnet.org/cookieclicker/img/panelVertical.png?v=2" style="height:965px;"> </div>
+
+</body>
+
+</html>
