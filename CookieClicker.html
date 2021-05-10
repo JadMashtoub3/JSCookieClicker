@@ -2,46 +2,75 @@
 <html>
 <style>
 
-    .cookieimg {
-        position: relative;
-    }
     .sidebarleft {
         position:absolute;
         left: 600px;
         padding: 0;
         top:0;
     }
+   
     .sidebarright {
         position: absolute;
         right:600px;
         padding: 0;
         top:0;
     }        
+   
     .upgradebox {
         position: relative;
-        
+        top:-500px; 
+        left: -250px; 
+        font-size:x-large; 
+        background: none;
     }
-body {
-    background-image: url("https://vignette.wikia.nocookie.net/cookieclicker/images/5/50/Wiki-background/revision/latest?cb=20130930144956;");
+    
+    .header {
+        border: 1px solid black;
+        margin-right:1244px;
+        padding:0px;
+      
+        left:622px;
+        text-align: center;
+        height:125px;
+        position:relative;
+        z-index: 1;
+        background-color: rgb(76, 146, 204);
+
+    }
+  
+    body {
+        background-image: url("CookieBgd.jpg");
+        z-index: -1;
 }
+    .button:active {
+        transform: translateY(4px);
+    }
 </style>    
 <script> 
     function buttonclick() {
+        
   document.getElementById("cookie").value++;
+  
 }
 </script>
+<div class = "header">Cookie clicker :)</div>
 <body>
-    <div style="position: absolute; left: 50px; top: 290px; cursor: pointer;">
-        <img id="gimper_img" src="https://i.pinimg.com/originals/b5/0b/9e/b50b9e587149821da847b86dbcb5e8be.jpg" width="450" height="450" alt="cookiehere" border="0" onclick="buttonclick();">
-          <input type="text"  id="cookie" value="0" ></input>
-    </div>
     
+            <div style= "cursor:pointer;">
+                <img id="button" src="cookie.png" width="500" height="450" alt="cookiehere" border="0" onclick="buttonclick();"> </div>    
+            <input type="button" id="cookie"   style="border: none; position: relative; top:-500px; right:5px; font-size:x-large; color: white; background-color: rgb(0, 0, 0); width: 600px; z-index: 2; opacity: 0.6;" >
+            </input>
+
+
     <div class = "sidebarleft">
-    <img id ="sidebarleft" src ="https://orteil.dashnet.org/cookieclicker/img/panelVertical.png?v=2" style="height:965px;"> </div>
+        <img id ="sidebarleft" src ="https://orteil.dashnet.org/cookieclicker/img/panelVertical.png?v=2" style="height:965px;"> 
+    </div>
    
     <div class = "sidebarright">
-    <img id ="sidebarright" src ="https://orteil.dashnet.org/cookieclicker/img/panelVertical.png?v=2" style="height:965px;"> </div>
+        <img id ="sidebarright" src ="https://orteil.dashnet.org/cookieclicker/img/panelVertical.png?v=2" style="height:965px;">
+    </div>
 
+    
 </body>
 
 </html>
